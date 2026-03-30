@@ -1,16 +1,61 @@
-# React + Vite
+# Lean Six Sigma Yellow Belt Quiz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive exam prep quiz app for the Lean Six Sigma Yellow Belt certification, built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **60-question bank** covering all core Lean Six Sigma Yellow Belt topics
+- **Randomized 15-question quizzes** drawn from the full bank each session
+- **30-minute countdown timer** that auto-submits when time expires
+- **Image-based questions** for chart and diagram interpretation (Pareto, scatter plots, FMEA tables)
+- **Detailed answer explanations** shown after submission
+- **Results screen** with score and per-question review
 
-## React Compiler
+## Topics Covered
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- DMAIC methodology
+- Project Charter and Business Case
+- Voice of the Customer (VOC) and CTQ
+- Lean principles and the 8 wastes
+- SIPOC, Value Stream Mapping, 5S, Kanban, Poka-yoke
+- FMEA and risk priority
+- Process capability (Cp, Cpk), sigma levels, and normal distribution
+- Measurement System Analysis (MSA)
+- Control charts and statistical tools
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js 18+
+- npm
+
+### Install and Run
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+## Test Mode
+
+Append `?test=true` to the URL to force image-based questions into the quiz session (useful for testing all question types):
+
+```
+http://localhost:5173/?test=true
+```
+
+## Tech Stack
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/) (icons)
